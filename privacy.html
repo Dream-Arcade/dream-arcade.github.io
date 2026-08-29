@@ -1,122 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - AppointMe Tracker</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1 {
-            color: #111;
-            border-bottom: 2px solid #eaeaea;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #222;
-            margin-top: 30px;
-            border-bottom: 1px solid #eaeaea;
-            padding-bottom: 5px;
-        }
-        p, li {
-            font-size: 16px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        .meta-info {
-            background-color: #f7f7f7;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 30px;
-            font-size: 14px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Privacy Policy for AppointMe Tracker by Coffee Arcade Studios."
+  />
+
+  <title>Privacy Policy | AppointMe Tracker</title>
+
+  <style>
+    :root {
+      --background: #f5f7fb;
+      --card: #ffffff;
+      --text: #1d2939;
+      --muted: #667085;
+      --border: #e4e7ec;
+      --primary: #3157d5;
+      --primary-light: #eef3ff;
+      --green-bg: #eefbf4;
+      --green-border: #b7ebd2;
+      --green-text: #166534;
+      --shadow: 0 12px 35px rgba(15, 23, 42, 0.07);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+      background:
+        radial-gradient(
+          circle at top left,
+          rgba(49, 87, 213, 0.08),
+          transparent 500px
+        ),
+        var(--background);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: min(94%, 1000px);
+      margin: 0 auto;
+      padding: 40px 0 70px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 42px;
+      border-radius: 24px;
+      background:
+        linear-gradient(
+          135deg,
+          #0f172a 0%,
+          #1e2d5a 55%,
+          #3157d5 100%
+        );
+      color: white;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      right: -100px;
+      top: -120px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .brand {
+      margin: 0 0 8px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.1;
+      letter-spacing: -0.035em;
+    }
+
+    .hero-description {
+      max-width: 760px;
+      margin: 18px 0 0;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 1.04rem;
+    }
+
+    .metadata {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .metadata-item {
+      padding: 14px 16px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 14px;
+    }
+
+    .metadata-item span {
+      display: block;
+      margin-bottom: 3px;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba(255, 255, 255, 0.65);
+    }
+
+    .metadata-item strong {
+      font-size: 0.93rem;
+    }
+
+    .section {
+      margin: 16px 0;
+      padding: 28px 30px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 6px 22px rgba(15, 23, 42, 0.035);
+    }
+
+    .section h2 {
+      margin: 0 0 16px;
+      color: #101828;
+      font-size: 1.35rem;
+      line-height: 1.3;
+    }
+
+    .section h3 {
+      margin: 24px 0 6px;
+      color: #1d2939;
+      font-size: 1.05rem;
+    }
+
+    .section p {
+      margin: 12px 0;
+    }
+
+    .section ul {
+      padding-left: 22px;
+      margin: 14px 0;
+    }
+
+    .section li {
+      margin: 7px 0;
+    }
+
+    .summary {
+      border-color: #cbd8ff;
+      background:
+        linear-gradient(
+          180deg,
+          #ffffff 0%,
+          #f8faff 100%
+        );
+    }
+
+    .summary li::marker {
+      color: var(--primary);
+    }
+
+    .important {
+      display: block;
+      margin: 14px 0;
+      padding: 14px 16px;
+      border: 1px solid var(--green-border);
+      border-radius: 12px;
+      background: var(--green-bg);
+      color: var(--green-text);
+      font-weight: 600;
+    }
+
+    .contact-box {
+      margin-top: 18px;
+      padding: 18px;
+      background: var(--primary-light);
+      border: 1px solid #d7e0ff;
+      border-radius: 14px;
+    }
+
+    .contact-box p {
+      margin: 4px 0;
+    }
+
+    footer {
+      padding: 24px 10px 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+      text-align: center;
+    }
+
+    footer strong {
+      color: #344054;
+    }
+
+    @media (max-width: 720px) {
+      .container {
+        width: min(95%, 1000px);
+        padding-top: 16px;
+      }
+
+      .hero {
+        padding: 28px 22px;
+        border-radius: 18px;
+      }
+
+      .metadata {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 22px 20px;
+        border-radius: 15px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-    <h1>Privacy Policy for AppointMe Tracker</h1>
-    
-    <div class="meta-info">
-        <strong>Last updated:</strong> August 12, 2026<br>
-        <strong>Developer:</strong> Coffee Arcade Studios<br>
-        <strong>App:</strong> AppointMe Tracker (iOS and Android)
-    </div>
+  <main class="container">
 
-    <p>This Privacy Policy explains how AppointMe Tracker (&ldquo;AppointMe,&rdquo; &ldquo;the App&rdquo;) handles information.</p>
-    
-    <p>AppointMe is a local-first appointment, caseload, hours, and credential tracking app. Your client, appointment, credential, and caseload records are stored locally on your device. The App may also use third-party services for advertising and in-app purchases, as described below.</p>
+    <header class="hero">
+      <p class="brand">Coffee Arcade Studios</p>
 
-    <h2>1. Summary</h2>
-    <ul>
+      <h1>Privacy Policy for AppointMe Tracker</h1>
+
+      <p class="hero-description">
+        This Privacy Policy explains how AppointMe Tracker
+        (“AppointMe,” “the App”) handles information.
+        AppointMe is a local-first appointment, caseload,
+        hours, and credential tracking app.
+      </p>
+
+      <div class="metadata">
+
+        <div class="metadata-item">
+          <span>Last updated</span>
+          <strong>August 12, 2026</strong>
+        </div>
+
+        <div class="metadata-item">
+          <span>Developer</span>
+          <strong>Coffee Arcade Studios</strong>
+        </div>
+
+        <div class="metadata-item">
+          <span>App</span>
+          <strong>AppointMe Tracker (iOS and Android)</strong>
+        </div>
+
+      </div>
+    </header>
+
+
+    <section class="section summary">
+      <h2>1. Summary</h2>
+
+      <ul>
         <li>No AppointMe account is required to use the core App.</li>
-        <li>Client, appointment, credential, and caseload records are stored locally on your device.</li>
-        <li>AppointMe does not automatically upload your caseload records to Coffee Arcade Studios servers or a cloud synchronization service.</li>
-        <li>Core tracking features are designed to work without an internet connection.</li>
-        <li>AppointMe may display advertisements provided by Google AdMob.</li>
-        <li>Advertising services may process limited device, advertising, usage, interaction, diagnostic, and network information.</li>
-        <li>AppointMe does not send your client names, client contact information, appointment notes, credential records, or other caseload content to AdMob for advertising purposes.</li>
-        <li>Optional AppointMe Plus purchases may be processed through Apple or Google and managed using RevenueCat.</li>
-        <li>You control when your AppointMe records leave the device through backup, export, and sharing features.</li>
-        <li>Coffee Arcade Studios does not sell your client or caseload information. Your client and caseload information stays on your devices.</li>
-    </ul>
 
-    <h2>2. Information Stored Locally on Your Device</h2>
-    <p>AppointMe stores information that you enter or generate while using the App, which may include:</p>
-    <ul>
-        <li>Client profiles, such as display name, client code, phone number, email address, address, notes, and status</li>
-        <li>Appointment information, such as dates, start and end times, duration, status, appointment type, location, notes, attendees, and recurring-series information</li>
-        <li>Credential or certification tracking information, such as credential name, required hours, previously earned hours, tracking dates, target dates, and progress</li>
-        <li>App profile information that you choose to provide, such as your display name, organization, and credential goal</li>
-        <li>App preferences, such as language, time format, hours display format, reminder settings, and theme</li>
-        <li>Local notification schedules used for appointment reminders, review reminders, and related App functions</li>
-    </ul>
-    <p>This information is primarily stored in a local SQLite database on your device. Coffee Arcade Studios does not automatically upload this local caseload database to its own servers.</p>
+        <li>
+          Client, appointment, credential, and caseload records
+          are stored locally on your device.
+        </li>
 
-    <h2>3. Advertising and Google AdMob</h2>
-    <p>AppointMe may display banner advertisements through Google AdMob. The Google Mobile Ads SDK may automatically process certain information when advertisements are requested or displayed. Depending on the device, operating system, region, consent choices, and advertising configuration, this may include:</p>
-    <ul>
-        <li>IP address, which may be used to estimate general location</li>
+        <li>
+          AppointMe does not automatically upload your caseload
+          records to Coffee Arcade Studios servers or a cloud
+          synchronization service.
+        </li>
+
+        <li>
+          Core tracking features are designed to work without
+          an internet connection.
+        </li>
+
+        <li>
+          AppointMe may display advertisements provided by Google AdMob.
+        </li>
+
+        <li>
+          Advertising services may process limited device,
+          advertising, usage, interaction, diagnostic,
+          and network information.
+        </li>
+
+        <li>
+          <strong>
+            AppointMe does not send your client names, client contact
+            information, appointment notes, credential records,
+            or other caseload content to AdMob for advertising purposes.
+          </strong>
+        </li>
+
+        <li>
+          Optional AppointMe Plus purchases may be processed through
+          Apple or Google and managed using RevenueCat.
+        </li>
+
+        <li>
+          You control when your AppointMe records leave the device
+          through backup, export, and sharing features.
+        </li>
+
+        <li>
+          <strong>
+            Coffee Arcade Studios does not sell your client or caseload
+            information. Your client and caseload information stays
+            on your devices.
+          </strong>
+        </li>
+      </ul>
+    </section>
+
+
+    <section class="section">
+      <h2>2. Information Stored Locally on Your Device</h2>
+
+      <p>
+        AppointMe stores information that you enter or generate while
+        using the App, which may include:
+      </p>
+
+      <ul>
+        <li>
+          Client profiles, such as display name, client code,
+          phone number, email address, address, notes, and status
+        </li>
+
+        <li>
+          Appointment information, such as dates, start and end times,
+          duration, status, appointment type, location, notes,
+          attendees, and recurring-series information
+        </li>
+
+        <li>
+          Credential or certification tracking information,
+          such as credential name, required hours, previously earned
+          hours, tracking dates, target dates, and progress
+        </li>
+
+        <li>
+          App profile information that you choose to provide,
+          such as your display name, organization, and credential goal
+        </li>
+
+        <li>
+          App preferences, such as language, time format,
+          hours display format, reminder settings, and theme
+        </li>
+
+        <li>
+          Local notification schedules used for appointment reminders,
+          review reminders, and related App functions
+        </li>
+      </ul>
+
+      <p>
+        This information is primarily stored in a local SQLite database
+        on your device.
+      </p>
+
+      <p>
+        Coffee Arcade Studios does not automatically upload this local
+        caseload database to its own servers.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <h2>3. Advertising and Google AdMob</h2>
+
+      <p>
+        AppointMe may display banner advertisements through Google AdMob.
+      </p>
+
+      <p>
+        The Google Mobile Ads SDK may automatically process certain
+        information when advertisements are requested or displayed.
+        Depending on the device, operating system, region,
+        consent choices, and advertising configuration,
+        this may include:
+      </p>
+
+      <ul>
+        <li>
+          IP address, which may be used to estimate general location
+        </li>
+
         <li>Device or advertising identifiers</li>
-        <li>App launches and certain interactions with the App or advertisements</li>
-        <li>Information about advertisements shown or interacted with</li>
-        <li>Diagnostic and performance information, such as app launch performance, crashes, hangs, or related technical information</li>
-        <li>Other information needed for advertising, analytics, measurement, security, and fraud prevention</li>
-    </ul>
-    <p>AppointMe does not provide AdMob with the contents of your local caseload records for ad targeting. This includes client names, addresses, phone numbers, email addresses, appointment notes, credential records, and similar professional records.</p>
-    <p>Advertising requires an internet connection. If the device is offline or an advertisement cannot be loaded, the core App continues to function without the advertisement.</p>
-    <p>Where required by applicable privacy laws or platform rules, AppointMe may display privacy or consent choices relating to advertising. Your available options may depend on your location and device settings. Google processes information collected through its advertising services according to its own privacy policies and terms.</p>
 
-    <h2>4. AppointMe Plus and In-App Purchases</h2>
-    <p>AppointMe may offer an optional one-time purchase called AppointMe Plus. AppointMe Plus may provide features such as:</p>
-    <ul>
+        <li>
+          App launches and certain interactions with the App
+          or advertisements
+        </li>
+
+        <li>
+          Information about advertisements shown or interacted with
+        </li>
+
+        <li>
+          Diagnostic and performance information, such as app launch
+          performance, crashes, hangs, or related technical information
+        </li>
+
+        <li>
+          Other information needed for advertising, analytics,
+          measurement, security, and fraud prevention
+        </li>
+      </ul>
+
+      <div class="important">
+        AppointMe does not provide AdMob with the contents of your
+        local caseload records for ad targeting. This includes client
+        names, addresses, phone numbers, email addresses,
+        appointment notes, credential records, and similar
+        professional records.
+      </div>
+
+      <p>
+        Advertising requires an internet connection. If the device
+        is offline or an advertisement cannot be loaded,
+        the core App continues to function without the advertisement.
+      </p>
+
+      <p>
+        Where required by applicable privacy laws or platform rules,
+        AppointMe may display privacy or consent choices relating
+        to advertising. Your available options may depend on your
+        location and device settings.
+      </p>
+
+      <p>
+        Google processes information collected through its advertising
+        services according to its own privacy policies and terms.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <h2>4. AppointMe Plus and In-App Purchases</h2>
+
+      <p>
+        AppointMe may offer an optional one-time purchase called
+        <strong>AppointMe Plus</strong>.
+      </p>
+
+      <p>AppointMe Plus may provide features such as:</p>
+
+      <ul>
         <li>Removing advertisements</li>
         <li>Unlocking PDF report generation</li>
-        <li>Other clearly identified Plus features added in future versions</li>
-    </ul>
-    <p>Purchases are processed through the applicable app store, such as Google Play or the Apple App Store. Coffee Arcade Studios does not directly receive or store your full payment-card information. AppointMe may use RevenueCat to manage purchase status and determine whether AppointMe Plus has been unlocked.</p>
-    <p>RevenueCat may process information related to purchases, such as:</p>
-    <ul>
+        <li>
+          Other clearly identified Plus features added in future versions
+        </li>
+      </ul>
+
+      <p>
+        Purchases are processed through the applicable app store,
+        such as Google Play or the Apple App Store.
+        Coffee Arcade Studios does not directly receive or store
+        your full payment-card information.
+      </p>
+
+      <p>
+        AppointMe may use RevenueCat to manage purchase status
+        and determine whether AppointMe Plus has been unlocked.
+      </p>
+
+      <p>
+        RevenueCat may process information related to purchases,
+        such as:
+      </p>
+
+      <ul>
         <li>Purchase history</li>
         <li>Product purchased</li>
         <li>Store and transaction information</li>
         <li>Purchase or entitlement status</li>
-        <li>An App User ID used to associate the purchase with the App</li>
-    </ul>
-    <p>When AppointMe does not require a user account, RevenueCat may use an automatically generated anonymous App User ID. AppointMe does not send your client, appointment, caseload, notes, or credential content to RevenueCat for purchase management. RevenueCat processes purchase-related information according to its own privacy policy and terms.</p>
+        <li>
+          An App User ID used to associate the purchase with the App
+        </li>
+      </ul>
 
-    <h2>5. Information We Do Not Use for Advertising or Purchase Management</h2>
-    <p>Coffee Arcade Studios does not intentionally send the following AppointMe record content to AdMob or RevenueCat:</p>
-    <ul>
+      <p>
+        When AppointMe does not require a user account,
+        RevenueCat may use an automatically generated anonymous
+        App User ID.
+      </p>
+
+      <p>
+        AppointMe does not send your client, appointment, caseload,
+        notes, or credential content to RevenueCat for purchase management.
+      </p>
+
+      <p>
+        RevenueCat processes purchase-related information according
+        to its own privacy policy and terms.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <h2>
+        5. Information We Do Not Use for Advertising or Purchase Management
+      </h2>
+
+      <p>
+        Coffee Arcade Studios does not intentionally send the following
+        AppointMe record content to AdMob or RevenueCat:
+      </p>
+
+      <ul>
         <li>Client names or client codes</li>
         <li>Client phone numbers or email addresses</li>
         <li>Client addresses</li>
@@ -128,30 +561,422 @@
         <li>Completed-hour records</li>
         <li>Backup database contents</li>
         <li>Exported spreadsheet or PDF contents</li>
-    </ul>
-    <p>These records remain part of AppointMe's local application data unless you choose to export, back up, share, or otherwise move them from your device.</p>
+      </ul>
 
-    <h2>6. Permissions and Device Features</h2>
-    <p>Depending on your device, operating system, and settings, AppointMe may use device features or permissions such as:</p>
-    <ul>
-        <li><strong>Notifications:</strong> to remind you about upcoming appointments, recurring series, backups, or appointments requiring review</li>
-        <li><strong>File sharing or storage features:</strong> when you choose to create, save, share, export, or import reports and database backups</li>
-        <li><strong>Phone features:</strong> when you choose to call a phone number stored in a client profile</li>
-        <li><strong>Maps or location-opening features:</strong> when you choose to open an address or location that you entered</li>
-        <li><strong>Internet access:</strong> for advertisements, privacy or consent services, in-app purchase verification, and related third-party services</li>
-    </ul>
-    <p>These permissions and features are used to provide the functionality you request. They are not used by Coffee Arcade Studios to upload your caseload database to its servers.</p>
+      <p>
+        These records remain part of AppointMe's local application data
+        unless you choose to export, back up, share, or otherwise move
+        them from your device.
+      </p>
+    </section>
 
-    <h2>7. Backups, Exports, PDFs, and Imports</h2>
-    <p>AppointMe allows you to intentionally move information outside the App. Data may leave the App's local database when you choose to:</p>
-    <ul>
+
+    <section class="section">
+      <h2>6. Permissions and Device Features</h2>
+
+      <p>
+        Depending on your device, operating system, and settings,
+        AppointMe may use device features or permissions such as:
+      </p>
+
+      <ul>
+        <li>
+          <strong>Notifications:</strong>
+          to remind you about upcoming appointments,
+          recurring series, backups, or appointments requiring review
+        </li>
+
+        <li>
+          <strong>File sharing or storage features:</strong>
+          when you choose to create, save, share, export,
+          or import reports and database backups
+        </li>
+
+        <li>
+          <strong>Phone features:</strong>
+          when you choose to call a phone number stored in a client profile
+        </li>
+
+        <li>
+          <strong>Maps or location-opening features:</strong>
+          when you choose to open an address or location that you entered
+        </li>
+
+        <li>
+          <strong>Internet access:</strong>
+          for advertisements, privacy or consent services,
+          in-app purchase verification, and related third-party services
+        </li>
+      </ul>
+
+      <p>
+        These permissions and features are used to provide the
+        functionality you request. They are not used by Coffee Arcade
+        Studios to upload your caseload database to its servers.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <h2>7. Backups, Exports, PDFs, and Imports</h2>
+
+      <p>
+        AppointMe allows you to intentionally move information
+        outside the App.
+      </p>
+
+      <p>
+        Data may leave the App's local database when you choose to:
+      </p>
+
+      <ul>
         <li>Create a database backup</li>
         <li>Export an Excel spreadsheet</li>
         <li>Generate or export a PDF report</li>
-        <li>Share or save a report or backup using your device's share sheet or file picker</li>
+
+        <li>
+          Share or save a report or backup using your device's
+          share sheet or file picker
+        </li>
+
         <li>Import a backup file that you select</li>
-    </ul>
-    <p>When you export or share data, you control where that information is sent or saved.</p>
+      </ul>
+
+      <p>
+        When you export or share a file, that file may contain
+        information from your AppointMe records depending on
+        the options you selected.
+      </p>
+
+      <p>
+        Anyone who receives or gains access to an exported report
+        or backup may be able to view its contents.
+      </p>
+
+      <p>
+        You are responsible for deciding where exported or backup
+        files are stored and with whom they are shared.
+      </p>
+
+      <p>
+        Treat AppointMe backups and exported reports as you would
+        other potentially sensitive professional records.
+      </p>
+
+      <p>
+        Importing a database backup may replace the current local
+        AppointMe database after you confirm the restore operation.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <h2>8. Internet and Offline Use</h2>
+
+      <p>
+        AppointMe's core recordkeeping features are designed to function
+        without an internet connection.
+      </p>
+
+      <p>
+        You may continue to access and manage locally stored
+        information such as:
+      </p>
+
+      <ul>
+        <li>Clients</li>
+        <li>Appointments</li>
+        <li>Completed hours</li>
+        <li>Credentials</li>
+        <li>Reports</li>
+        <li>Local backups</li>
+      </ul>
+
+      <p>while offline.</p>
+
+      <p>Certain optional services require internet access, including:</p>
+
+      <ul>
+        <li>Loading advertisements</li>
+        <li>Completing or restoring an AppointMe Plus purchase</li>
+        <li>Refreshing purchase status</li>
+        <li>
+          Displaying certain advertising privacy or consent messages
+        </li>
+      </ul>
+
+      <p>
+        The failure of one of these online services should not prevent
+        access to the App's core local tracking features.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <h2>9. Third-Party Services</h2>
+
+      <p>
+        AppointMe may use third-party services to provide
+        limited functionality.
+      </p>
+
+      <p>These services may include:</p>
+
+      <h3>Google AdMob</h3>
+
+      <p>
+        Used to provide and measure advertisements.
+        Google may process advertising, device, network,
+        interaction, and diagnostic information.
+      </p>
+
+      <h3>RevenueCat</h3>
+
+      <p>
+        Used to manage AppointMe Plus purchase status and entitlements.
+        RevenueCat may process purchase history and an App User ID
+        associated with purchase management.
+      </p>
+
+      <h3>Google Play and Apple App Store</h3>
+
+      <p>
+        Used to distribute the App and process applicable in-app purchases.
+        These platforms may independently process purchase, account,
+        device, analytics, or diagnostic information according
+        to their own policies.
+      </p>
+
+      <p>
+        Information processed by these third-party services is governed
+        by their respective privacy policies and terms.
+      </p>
+
+      <p>
+        Coffee Arcade Studios does not control all information
+        independently collected by these third-party platforms.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <h2>10. Advertising Privacy Choices</h2>
+
+      <p>
+        Depending on your location, AppointMe may provide consent
+        or privacy choices related to advertising.
+      </p>
+
+      <p>
+        These choices may include options relating to personalized
+        advertising, advertising partners, or other processing
+        required under applicable privacy rules.
+      </p>
+
+      <p>
+        Google AdMob provides tools for managing privacy and consent
+        choices in regions where they are required.
+      </p>
+
+      <p>
+        Changing an advertising privacy preference does not delete
+        your locally stored AppointMe clients, appointments,
+        credentials, or reports.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <h2>11. Children's Privacy</h2>
+
+      <p>
+        AppointMe is intended for professional and adult use in
+        managing appointments, caseload information,
+        credential progress, and work records.
+      </p>
+
+      <p>
+        The App is not directed to children under 13,
+        or the equivalent minimum age required by applicable law.
+      </p>
+
+      <p>
+        If an adult user chooses to enter information relating to
+        a minor client, that information remains part of the user's
+        locally stored AppointMe records and is not intentionally
+        provided to advertising or purchase-management services
+        by AppointMe.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <h2>12. Data Retention and Deletion</h2>
+
+      <p>
+        Your locally stored AppointMe records remain on your device
+        until you delete them, replace the local database through
+        a restore, or remove the App.
+      </p>
+
+      <p>You can:</p>
+
+      <ul>
+        <li>
+          Delete or archive individual records where the App
+          provides that option
+        </li>
+
+        <li>Delete appointments</li>
+
+        <li>
+          Use <strong>Delete all data</strong> in Settings to remove
+          AppointMe data and reset the local database
+        </li>
+
+        <li>
+          Uninstall the App, which may remove locally stored App data
+          depending on your device and operating system
+        </li>
+      </ul>
+
+      <p>
+        Uninstalling AppointMe does not necessarily delete backup,
+        Excel, PDF, or other exported files that you previously
+        saved outside the App.
+      </p>
+
+      <p>
+        Advertising providers, app stores, and purchase-management
+        providers may retain information they process according
+        to their own privacy policies and legal requirements.
+      </p>
+
+      <p>
+        If you have a privacy or deletion request relating to
+        information controlled by Coffee Arcade Studios,
+        you may contact us using the information below.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <h2>13. Security</h2>
+
+      <p>
+        AppointMe is designed to keep its core caseload records locally
+        on your device, but no method of electronic storage
+        is completely risk-free.
+      </p>
+
+      <p>
+        You are responsible for protecting access to your device
+        and any exported reports or backup files.
+      </p>
+
+      <p>
+        We recommend using available device-security features such as
+        a screen lock, PIN, password, fingerprint, or Face ID
+        where appropriate.
+      </p>
+
+      <p>
+        Be cautious when sharing backups, Excel files, or PDF reports
+        containing sensitive professional information.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <h2>14. International Users</h2>
+
+      <p>
+        Your AppointMe caseload database is primarily stored on
+        the device where you use the App.
+      </p>
+
+      <p>
+        However, third-party advertising, app-store,
+        and purchase-management services may process limited information
+        in countries other than the country where you live.
+        Their handling of that information is governed by their
+        respective privacy policies and applicable law.
+      </p>
+
+      <p>
+        If you export, share, or move a backup or report,
+        that information will be stored wherever you choose
+        to send or save it.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <h2>15. No Sale of Caseload Information</h2>
+
+      <div class="important">
+        Coffee Arcade Studios does not sell your AppointMe client,
+        appointment, credential, or caseload records.
+      </div>
+
+      <p>
+        We also do not provide the contents of those records to AdMob
+        for the purpose of targeting advertisements.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <h2>16. Changes to This Policy</h2>
+
+      <p>
+        We may update this Privacy Policy when AppointMe's features,
+        third-party services, legal requirements,
+        or data practices change.
+      </p>
+
+      <p>
+        When we make changes, we will update the
+        <strong>Last updated</strong> date at the top of this policy.
+      </p>
+
+      <p>
+        We encourage you to review the Privacy Policy after
+        major App updates.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <h2>17. Contact</h2>
+
+      <p>
+        If you have questions, privacy requests, or concerns relating
+        to AppointMe Tracker or this Privacy Policy, contact:
+      </p>
+
+      <div class="contact-box">
+        <p>
+          <strong>Coffee Arcade Studios</strong>
+        </p>
+
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:coffeearcadestudios@gmail.com">
+            coffeearcadestudios@gmail.com
+          </a>
+        </p>
+      </div>
+    </section>
+
+
+    <footer>
+      <strong>Coffee Arcade Studios</strong>
+      <br />
+      AppointMe Tracker Privacy Policy
+    </footer>
+
+  </main>
 
 </body>
 </html>
